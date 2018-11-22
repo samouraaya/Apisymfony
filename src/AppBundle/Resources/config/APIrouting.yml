@@ -1,0 +1,5 @@
+api_tests:
+    type: rest
+    prefix: /test
+    resource: AppBundle\Controller\ApiController
+    name_prefix: api_test_

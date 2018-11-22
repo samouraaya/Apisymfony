@@ -1,0 +1,1 @@
+fos.Router.setData({"base_url":"","routes":{"api_test_index_test_exemple":{"tokens":[["variable",".","xml|json|html","_format"],["text","\/api\/test\/tests\/exemples\/index"]],"defaults":{"_format":"json"},"requirements":{"_format":"xml|json|html"},"hosttokens":[],"methods":["GET"],"schemes":[]}},"prefix":"","host":"localhost","port":"","scheme":"http"});

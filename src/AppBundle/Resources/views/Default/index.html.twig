@@ -1,0 +1,23 @@
+<body>
+Hello World! xxxx
+<script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+<script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<button onclick="test()">test</button>
+<br><br>
+<div id="test"></div>
+<script>
+    function test() {
+        $.ajax({
+            url: Routing.generate('api_test_index_test_exemple'),
+            method: "GET",
+            success: function (result) {
+                    document.getElementById('test').innerHTML = result.data;
+            },
+            error: function (result) {
+            }
+        });
+    }
+</script>
+</body>
